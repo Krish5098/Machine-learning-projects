@@ -1,0 +1,28 @@
+import random
+import numpy as np
+
+def check_multi():
+  X = tuple(np.random.randint(1,10,size=2))
+  print("how much is",X[0],"times",X[1],"??")
+
+  y = int(input())
+  z = int(input())
+
+  if y==(X[0]*X[1]):
+    if z==1:
+      print("Very good")
+    if z==2:
+      print("Nice work!!")
+    if(z==3):
+      print("Keep up the good work!!")    
+
+
+  else:
+    if(z==1):
+      print("no!! please try again") 
+    if z==2:
+      print("NO.try once more")
+    if z==3:
+      print("NO.keep trying")
+  check_multi()        
+check_multi()  
